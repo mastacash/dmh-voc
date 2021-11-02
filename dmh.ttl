@@ -1,0 +1,20 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <https://schema.org/version/latest/schemaorg-current-https.ttl> .
+@prefix qb: <http://purl.org/linked-data/cube> .
+@prefix dmh: <https://raw.githubusercontent.com/mastacash/dmh-voc/master/README.md> .
+
+schema:Collection a rdfs:Class ;
+    rdfs:label "Collection" ;
+    rdfs:comment "A collection of items e.g. creative works or products." ;
+    rdfs:subClassOf schema:CreativeWork ;
+    schema:isPartOf <https://bib.schema.org> .
+
+dmh:ConceptScheme a skos:ConceptScheme ;
+        rdfs:label "The label ..."@en ;
+        dc:description "The description of the ..."@en ;
+        .
